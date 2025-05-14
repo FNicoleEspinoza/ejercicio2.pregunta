@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 2 - Alerta con clic</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      text-align: center;
+      padding: 40px;
+    }
+
+    #miBoton {
+      padding: 12px 25px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #68a7c3;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #miBoton:hover {
+      background-color: #6f6da2;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="miBoton">SABIAS QUE!!?</button>
+
+  <script>
+    $(document).ready(function() {
+      $('#miBoton').on('click', function() {
+        alert('Pues nada :p, la curiosidad mató al gato :()');
+      });
+    });
+  </script>
+
+</body>
+</html>
